@@ -13,28 +13,44 @@
       "slug": "bears",
       "owner": "CPU-1",
       "division": "North",
-      "logo": "bears.svg"
+      "logo": "chicago-bears-logo.png",
+      "primary": "#0B162A",
+      "secondary": "#C83803",
+      "conference": "NFC",
+      "main_rival": "packers"
     },
     {
       "name": "Packers",
       "slug": "packers",
       "owner": "CPU-2",
       "division": "North",
-      "logo": "packers.svg"
+      "logo": "green-bay-packers-logo.png",
+      "primary": "#203731",
+      "secondary": "#FFB612",
+      "conference": "NFC",
+      "main_rival": "bears"
     },
     {
       "name": "Lions",
       "slug": "lions",
       "owner": "CPU-3",
       "division": "North",
-      "logo": "lions.svg"
+      "logo": "detroit-lions-logo.png",
+      "primary": "#0076B6",
+      "secondary": "#B0B7BC",
+      "conference": "NFC",
+      "main_rival": "vikings"
     },
     {
       "name": "Vikings",
       "slug": "vikings",
       "owner": "CPU-4",
       "division": "North",
-      "logo": "vikings.svg"
+      "logo": "minnesota-vikings-logo.png",
+      "primary": "#4F2683",
+      "secondary": "#FFC62F",
+      "conference": "NFC",
+      "main_rival": "lions"
     },
     {
       "name": "New Jersey Beef",
@@ -81,84 +97,132 @@
       "slug": "giants",
       "owner": "CPU-9",
       "division": "East",
-      "logo": "giants.svg"
+      "logo": "new-york-giants-logo.png",
+      "primary": "#0B2265",
+      "secondary": "#A71930",
+      "conference": "NFC",
+      "main_rival": "commanders"
     },
     {
       "name": "Eagles",
       "slug": "eagles",
       "owner": "CPU-10",
       "division": "East",
-      "logo": "eagles.svg"
+      "logo": "philadelphia-eagles-logo.png",
+      "primary": "#004C54",
+      "secondary": "#A5ACAF",
+      "conference": "NFC",
+      "main_rival": "cowboys"
     },
     {
       "name": "Commanders",
       "slug": "commanders",
       "owner": "CPU-11",
       "division": "East",
-      "logo": "commanders.svg"
+      "logo": "washington-commanders-logo.png",
+      "primary": "#5A1414",
+      "secondary": "#FFB612",
+      "conference": "NFC",
+      "main_rival": "giants"
     },
     {
       "name": "Cowboys",
       "slug": "cowboys",
       "owner": "CPU-12",
       "division": "East",
-      "logo": "cowboys.svg"
+      "logo": "dallas-cowboys-logo.png",
+      "primary": "#003594",
+      "secondary": "#869397",
+      "conference": "NFC",
+      "main_rival": "eagles"
     },
     {
       "name": "Rams",
       "slug": "rams",
       "owner": "CPU-13",
       "division": "West",
-      "logo": "rams.svg"
+      "logo": "los-angeles-rams-logo.png",
+      "primary": "#003594",
+      "secondary": "#FFA300",
+      "conference": "NFC",
+      "main_rival": "cardinals"
     },
     {
       "name": "49ers",
       "slug": "49ers",
       "owner": "CPU-14",
       "division": "West",
-      "logo": "49ers.svg"
+      "logo": "san-francisco-49ers-logo.png",
+      "primary": "#AA0000",
+      "secondary": "#B3995D",
+      "conference": "NFC",
+      "main_rival": "seahawks"
     },
     {
       "name": "Cardinals",
       "slug": "cardinals",
       "owner": "CPU-15",
       "division": "West",
-      "logo": "cardinals.svg"
+      "logo": "arizona-cardinals-logo.png",
+      "primary": "#97233F",
+      "secondary": "#000000",
+      "conference": "NFC",
+      "main_rival": "rams"
     },
     {
       "name": "Seahawks",
       "slug": "seahawks",
       "owner": "CPU-16",
       "division": "West",
-      "logo": "seahawks.svg"
+      "logo": "seattle-seahawks-logo.png",
+      "primary": "#002244",
+      "secondary": "#69BE28",
+      "conference": "NFC",
+      "main_rival": "49ers"
     },
     {
       "name": "Saints",
       "slug": "saints",
       "owner": "CPU-17",
       "division": "South",
-      "logo": "saints.svg"
+      "logo": "new-orleans-saints-logo.png",
+      "primary": "#D3BC8D",
+      "secondary": "#101820",
+      "conference": "NFC",
+      "main_rival": "falcons"
     },
     {
       "name": "Panthers",
       "slug": "panthers",
       "owner": "CPU-18",
       "division": "South",
-      "logo": "panthers.svg"
+      "logo": "carolina-panthers-logo.png",
+      "primary": "#0085CA",
+      "secondary": "#101820",
+      "conference": "NFC",
+      "main_rival": "buccaneers"
     },
     {
       "name": "Falcons",
       "slug": "falcons",
       "owner": "CPU-19",
       "division": "South",
-      "logo": "falcons.svg"
+      "logo": "atlanta-falcons-logo.png",
+      "primary": "#A71930",
+      "secondary": "#000000",
+      "conference": "NFC",
+      "main_rival": "saints"
     },
     {
       "name": "Buccaneers",
       "slug": "buccaneers",
       "owner": "CPU-20",
       "division": "South",
-      "logo": "buccaneers.svg"
+      "logo": "tampa-bay-buccaneers-logo.png",
+      "primary": "#D50A0A",
+      "secondary": "#34302B",
+      "conference": "NFC",
+      "main_rival": "panthers"
     }
   ]
 }
