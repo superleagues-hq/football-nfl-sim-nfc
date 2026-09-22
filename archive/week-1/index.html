@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NFL Sim — NFC</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0B2265">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="SuperLeagues">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg-dark:#0A0B0E;--bg:#111319;--primary:#C9A227;--secondary:#8C97A6;--text:#F2F3F5;--line:rgba(242,243,245,0.16);}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg-dark);color:var(--text);font-family:'Inter',sans-serif;}
+.wrap{max-width:640px;margin:0 auto;background:var(--bg);min-height:100vh;}
+.button-bar{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:16px 20px 4px;}
+.button-bar a{display:inline-block;padding:10px 20px;background:#FB4F14;color:#fff;text-decoration:none;border-radius:5px;font-weight:600;font-size:14px;}
+.button-bar a:hover{background:#C43D0E;}
+.masthead{padding:32px 20px 20px;text-align:center;border-bottom:4px solid var(--primary);}
+.logo-img{height:72px;margin:0 auto 12px;display:block;}
+.kicker{font-size:12px;letter-spacing:0.14em;color:var(--secondary);margin-bottom:6px;font-weight:700;text-transform:uppercase;}
+h1{font-family:'Oswald',sans-serif;font-size:clamp(26px,7.5vw,36px);font-weight:700;margin:0 0 6px;}
+.edition{font-size:13px;color:rgba(242,243,245,0.7);}
+.hero{padding:20px;}
+.hero h2{font-family:'Oswald',sans-serif;font-size:clamp(18px,5.6vw,23px);margin:0 0 10px;color:var(--secondary);}
+.hero p{font-size:15px;line-height:1.55;margin:0;color:rgba(242,243,245,0.9);}
+section.block{padding:8px 20px 22px;}
+.section-title{font-family:'Oswald',sans-serif;font-size:19px;font-weight:600;margin:0 0 12px;color:var(--secondary);}
+.rank-row{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:10px;border:1px solid var(--line);margin-bottom:6px;text-decoration:none;color:inherit;}
+.rank-row:hover{background:rgba(242,243,245,0.04);}
+.rank-row .num{font-family:'Oswald',sans-serif;font-weight:700;color:var(--primary);width:20px;}
+.rank-row img{height:26px;}
+.rank-row .info{flex:1;font-size:13.5px;}
+.rank-row .pts{font-size:12px;color:rgba(242,243,245,0.55);}
+
+
+/* === MOBILE PORTRAIT === */
+@media (max-width: 768px) {
+  html, body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .page {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 12px 14px 30px !important;
+    margin: 0 !important;
+  }
+  .button-bar { padding: 10px 12px 6px !important; gap: 6px !important; }
+  .button-bar a { padding: 9px 12px !important; font-size: 12px !important; }
+  .masthead { padding: 18px 12px 14px !important; }
+  h1 { font-size: 22px !important; line-height: 1.15 !important; }
+  .kicker { font-size: 10px !important; }
+  .edition { font-size: 12px !important; }
+  .hero { padding: 14px 12px !important; }
+  .hero h2 { font-size: 17px !important; margin-bottom: 6px !important; }
+  .hero p { font-size: 13px !important; line-height: 1.45 !important; }
+  section.block { padding: 6px 12px 14px !important; }
+  .section-title { font-size: 16px !important; margin-bottom: 10px !important; }
+  .rank-row { padding: 10px 12px !important; gap: 8px !important; }
+  .rank-row .num { width: 16px !important; }
+  .rank-row img { height: 22px !important; }
+  .rank-row .info { font-size: 13px !important; }
+  .rank-row .pts { font-size: 11px !important; }
+  .card { padding: 12px !important; margin-bottom: 8px !important; }
+  .card h3 { font-size: 14px !important; }
+  .card p { font-size: 12.5px !important; }
+  table { font-size: 12px !important; }
+  th, td { padding: 8px 6px !important; }
+  th { font-size: 10px !important; }
+  td.team a { font-size: 14px !important; }
+  .badge { width: 26px !important; height: 26px !important; font-size: 13px !important; }
+  .team-card { padding: 12px !important; }
+  .team-card img { height: 44px !important; }
+  .team-card .name { font-size: 16px !important; }
+  .bracket { gap: 10px !important; }
+  .round { min-width: 100% !important; max-width: 100% !important; flex: 1 1 100% !important; }
+  .team { padding: 8px 10px !important; gap: 8px !important; }
+  .team img { height: 40px !important; width: 40px !important; }
+  .team .seed-badge, .team .seed { width: 26px !important; height: 26px !important; font-size: 13px !important; }
+  .team .name { font-size: 14px !important; }
+  .team .score { font-size: 18px !important; }
+  .navstrip { padding: 8px 10px !important; font-size: 11px !important; }
+}
+
+
+.sl-nav{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:0 0 20px;padding:0;}
+.sl-nav a{display:inline-block;padding:9px 18px;background:#FFF;color:#0B2265;text-decoration:none;font-family:'Oswald',Arial,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border-radius:6px;border:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.04);transition:all 0.15s;}
+.sl-nav a:hover{background:#0B2265;color:#FFF;border-color:#0B2265;}
+.sl-nav a.active{background:#C8102E;color:#FFF;border-color:#C8102E;}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:9999;background:#C9A227;color:#000;padding:10px 16px;text-align:center;font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.05em;">&#128197; VIEWING WEEK 1 ARCHIVE &middot; <a href="/football-nfl-sim-nfc/" style="color:#000;text-decoration:underline;">GO TO CURRENT WEEK &rarr;</a></div>
+
+<div class="wrap">
+<nav class="sl-nav">
+  <a href="index.html" class="active">HOME</a>
+  <a href="news/">NEWS</a>
+  <a href="teams.html">STANDINGS</a>
+  <a href="playoffs.html">PLAYOFFS</a>
+  <a href="archive/">ARCHIVE</a>
+<a href="/welcome/" title="Help" style="background:transparent;border:1.5px solid currentColor;border-radius:50%;width:30px;height:30px;padding:0;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;line-height:1;font-family:Oswald,Arial,sans-serif;text-decoration:none;opacity:0.75;align-self:center;">?</a>
+</nav>
+
+<div style="text-align:center;padding:12px 0 0;">
+  <a href="/" style="color:rgba(242,243,245,0.65);text-decoration:none;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">&larr; Super Leagues</a>
+</div>
+<header class="masthead">
+  <div class="kicker">POST-DRAFT REPORT &middot; SEASON 2026</div>
+  <h1>NFL Sim — NFC</h1>
+  <div class="edition">Season 2026 — Week 1</div>
+</header>
+<div class="hero">
+  <h2>The board is set.</h2>
+  <p>All rosters loaded. Every franchise has a page.</p>
+</div>
+<section class="block">
+  <div class="section-title">&#127942; Power Rankings</div>
+  <a class="rank-row" href="teams/bears/index.html">
+    <div class="num">1</div>
+    <img src="logos/bears.svg" alt="Bears">
+    <div class="info">Bears<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/packers/index.html">
+    <div class="num">2</div>
+    <img src="logos/packers.svg" alt="Packers">
+    <div class="info">Packers<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/lions/index.html">
+    <div class="num">3</div>
+    <img src="logos/lions.svg" alt="Lions">
+    <div class="info">Lions<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/vikings/index.html">
+    <div class="num">4</div>
+    <img src="logos/vikings.svg" alt="Vikings">
+    <div class="info">Vikings<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/new-jersey-beef/index.html">
+    <div class="num">5</div>
+    <img src="logos/new-jersey-beef.svg" alt="New Jersey Beef">
+    <div class="info">New Jersey Beef<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/new-mexico-cholos/index.html">
+    <div class="num">6</div>
+    <img src="logos/new-mexico-cholos.svg" alt="New Mexico Cholos">
+    <div class="info">New Mexico Cholos<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/south-carolina-socals/index.html">
+    <div class="num">7</div>
+    <img src="logos/south-carolina-socals.svg" alt="South Carolina Socals">
+    <div class="info">South Carolina Socals<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/iowa-ice/index.html">
+    <div class="num">8</div>
+    <img src="logos/iowa-ice.svg" alt="Iowa Ice">
+    <div class="info">Iowa Ice<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/giants/index.html">
+    <div class="num">9</div>
+    <img src="logos/giants.svg" alt="Giants">
+    <div class="info">Giants<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/eagles/index.html">
+    <div class="num">10</div>
+    <img src="logos/eagles.svg" alt="Eagles">
+    <div class="info">Eagles<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/commanders/index.html">
+    <div class="num">11</div>
+    <img src="logos/commanders.svg" alt="Commanders">
+    <div class="info">Commanders<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/cowboys/index.html">
+    <div class="num">12</div>
+    <img src="logos/cowboys.svg" alt="Cowboys">
+    <div class="info">Cowboys<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/rams/index.html">
+    <div class="num">13</div>
+    <img src="logos/rams.svg" alt="Rams">
+    <div class="info">Rams<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/49ers/index.html">
+    <div class="num">14</div>
+    <img src="logos/49ers.svg" alt="49ers">
+    <div class="info">49ers<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/cardinals/index.html">
+    <div class="num">15</div>
+    <img src="logos/cardinals.svg" alt="Cardinals">
+    <div class="info">Cardinals<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/seahawks/index.html">
+    <div class="num">16</div>
+    <img src="logos/seahawks.svg" alt="Seahawks">
+    <div class="info">Seahawks<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/saints/index.html">
+    <div class="num">17</div>
+    <img src="logos/saints.svg" alt="Saints">
+    <div class="info">Saints<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/panthers/index.html">
+    <div class="num">18</div>
+    <img src="logos/panthers.svg" alt="Panthers">
+    <div class="info">Panthers<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/falcons/index.html">
+    <div class="num">19</div>
+    <img src="logos/falcons.svg" alt="Falcons">
+    <div class="info">Falcons<div class="pts">Roster quality: —</div></div>
+  </a>
+  <a class="rank-row" href="teams/buccaneers/index.html">
+    <div class="num">20</div>
+    <img src="logos/buccaneers.svg" alt="Buccaneers">
+    <div class="info">Buccaneers<div class="pts">Roster quality: —</div></div>
+  </a>
+</section>
+<div style="text-align:center;padding:14px 20px 26px;">
+  <img src="logos/superleagues-logo.png" alt="SuperLeagues" style="height:40px;opacity:0.9;">
+  <div style="font-size:11px;letter-spacing:0.08em;color:rgba(255,255,255,0.45);margin-top:6px;">BROUGHT TO YOU BY SUPERLEAGUES</div>
+</div>
+</div>
+<script src="register.js"></script>
+</body>
+</html>

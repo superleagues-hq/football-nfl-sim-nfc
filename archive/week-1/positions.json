@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "canonical_positions": ["QB", "RB", "WR", "TE", "K", "D/ST"],
+  "aliases": {
+    "DST": "D/ST", "D/ST": "D/ST", "DEF": "D/ST",
+    "PK": "K", "K": "K",
+    "QB": "QB", "RB": "RB", "HB": "RB", "FB": "RB",
+    "WR": "WR", "TE": "TE"
+  },
+  "fantasy_slot_order": ["QB", "RB", "WR", "TE", "FLEX", "K", "D/ST", "BN", "IR"]
+}

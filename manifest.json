@@ -1,0 +1,21 @@
+{
+  "name": "NFL Sim \u2014 NFC",
+  "short_name": "NFC",
+  "start_url": "/football-nfl-sim-nfc/",
+  "scope": "/football-nfl-sim-nfc/",
+  "display": "standalone",
+  "background_color": "#0A0B0E",
+  "theme_color": "#0B2265",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "league_slug": "football-nfl-sim-nfc",
+  "display_name": "NFL Sim \u2014 NFC",
+  "sport": "football",
+  "format": "nfl-sim",
+  "platform": "espn",
+  "platform_league_id": "1952721247",
+  "conference": "NFC",
+  "conference_partner_slug": "football-nfl-sim-afc",
+  "teams": [
+    {
+      "name": "Bears",
+      "slug": "bears",
+      "owner": "CPU-1",
+      "division": "North",
+      "logo": "bears.svg"
+    },
+    {
+      "name": "Packers",
+      "slug": "packers",
+      "owner": "CPU-2",
+      "division": "North",
+      "logo": "packers.svg"
+    },
+    {
+      "name": "Lions",
+      "slug": "lions",
+      "owner": "CPU-3",
+      "division": "North",
+      "logo": "lions.svg"
+    },
+    {
+      "name": "Vikings",
+      "slug": "vikings",
+      "owner": "CPU-4",
+      "division": "North",
+      "logo": "vikings.svg"
+    },
+    {
+      "name": "New Jersey Beef",
+      "slug": "new-jersey-beef",
+      "owner": "CPU-5",
+      "division": "East",
+      "logo": "new-jersey-beef.svg",
+      "alternate_names": [
+        "BEEF"
+      ]
+    },
+    {
+      "name": "New Mexico Cholos",
+      "slug": "new-mexico-cholos",
+      "owner": "CPU-6",
+      "division": "West",
+      "logo": "new-mexico-cholos.svg",
+      "alternate_names": [
+        "CHOLO"
+      ]
+    },
+    {
+      "name": "South Carolina Socals",
+      "slug": "south-carolina-socals",
+      "owner": "CPU-7",
+      "division": "South",
+      "logo": "south-carolina-socals.svg",
+      "alternate_names": [
+        "SOCALS"
+      ]
+    },
+    {
+      "name": "Iowa Ice",
+      "slug": "iowa-ice",
+      "owner": "CPU-8",
+      "division": "North",
+      "logo": "iowa-ice.svg",
+      "alternate_names": [
+        "ICE"
+      ]
+    },
+    {
+      "name": "Giants",
+      "slug": "giants",
+      "owner": "CPU-9",
+      "division": "East",
+      "logo": "giants.svg"
+    },
+    {
+      "name": "Eagles",
+      "slug": "eagles",
+      "owner": "CPU-10",
+      "division": "East",
+      "logo": "eagles.svg"
+    },
+    {
+      "name": "Commanders",
+      "slug": "commanders",
+      "owner": "CPU-11",
+      "division": "East",
+      "logo": "commanders.svg"
+    },
+    {
+      "name": "Cowboys",
+      "slug": "cowboys",
+      "owner": "CPU-12",
+      "division": "East",
+      "logo": "cowboys.svg"
+    },
+    {
+      "name": "Rams",
+      "slug": "rams",
+      "owner": "CPU-13",
+      "division": "West",
+      "logo": "rams.svg"
+    },
+    {
+      "name": "49ers",
+      "slug": "49ers",
+      "owner": "CPU-14",
+      "division": "West",
+      "logo": "49ers.svg"
+    },
+    {
+      "name": "Cardinals",
+      "slug": "cardinals",
+      "owner": "CPU-15",
+      "division": "West",
+      "logo": "cardinals.svg"
+    },
+    {
+      "name": "Seahawks",
+      "slug": "seahawks",
+      "owner": "CPU-16",
+      "division": "West",
+      "logo": "seahawks.svg"
+    },
+    {
+      "name": "Saints",
+      "slug": "saints",
+      "owner": "CPU-17",
+      "division": "South",
+      "logo": "saints.svg"
+    },
+    {
+      "name": "Panthers",
+      "slug": "panthers",
+      "owner": "CPU-18",
+      "division": "South",
+      "logo": "panthers.svg"
+    },
+    {
+      "name": "Falcons",
+      "slug": "falcons",
+      "owner": "CPU-19",
+      "division": "South",
+      "logo": "falcons.svg"
+    },
+    {
+      "name": "Buccaneers",
+      "slug": "buccaneers",
+      "owner": "CPU-20",
+      "division": "South",
+      "logo": "buccaneers.svg"
+    }
+  ]
+}
