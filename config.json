@@ -60,7 +60,10 @@
       "logo": "new-jersey-beef.svg",
       "alternate_names": [
         "BEEF"
-      ]
+      ],
+      "primary": "#CC0033",
+      "secondary": "#000000",
+      "main_rival": "South Carolina Socals"
     },
     {
       "name": "New Mexico Cholos",
@@ -70,7 +73,10 @@
       "logo": "new-mexico-cholos.svg",
       "alternate_names": [
         "CHOLO"
-      ]
+      ],
+      "primary": "#990000",
+      "secondary": "#FFC72C",
+      "main_rival": "Iowa Ice"
     },
     {
       "name": "South Carolina Socals",
@@ -80,7 +86,10 @@
       "logo": "south-carolina-socals.svg",
       "alternate_names": [
         "SOCALS"
-      ]
+      ],
+      "primary": "#154733",
+      "secondary": "#FEE123",
+      "main_rival": "New Jersey Beef"
     },
     {
       "name": "Iowa Ice",
@@ -90,7 +99,10 @@
       "logo": "iowa-ice.svg",
       "alternate_names": [
         "ICE"
-      ]
+      ],
+      "primary": "#4B9CD3",
+      "secondary": "#13294B",
+      "main_rival": "New Mexico Cholos"
     },
     {
       "name": "Giants",
